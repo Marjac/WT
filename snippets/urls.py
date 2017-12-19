@@ -4,8 +4,8 @@ from snippets import views
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^/$', views.SnippetList.as_view()),
-    url(r'^/(?P<pk>[0-9]+)/$', views.SnippetDetail.as_view()),
+    url(r'$', views.SnippetList.as_view()),
+    url(r'(?P<pk>[0-9]+)/$', views.SnippetDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
