@@ -4,8 +4,8 @@ from comments import views
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^comments/$', views.CommentList.as_view()),
-    url(r'^comments/(?P<pk>[0-9]+)/$', views.CommentDetail.as_view()),
+    url(r'^/$', views.CommentList.as_view()),
+    url(r'^/(?P<pk>[0-9]+)/$', views.CommentDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
