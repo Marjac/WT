@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<!--topbar-->
+  <!--topbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container d-flex">
       <a class="navbar-brand" href="index.html">VanGogh</a>
@@ -44,16 +44,16 @@
           </li>
 
         </ul>
-        
+
       </div>
     </div>
   </nav>
- <!--go back to the previous page-->
+  <!--go back to the previous page-->
   <div class="container d-flex">
     <span class="oi oi-arrow-left btn-lg btn-outline-dark" onclick="goBack()"></span>
   </div>
 
- <!--painting along with its information-->
+  <!--painting along with its information-->
   <div class="album text-muted">
     <div class="container">
       <div class="row">
@@ -75,7 +75,7 @@
       </div>
     </div>
   </div>
-<!--leave a comment form-->
+  <!--leave a comment form-->
   <div class="container">
     <div class="col-auto" style="text-align: center">
     </div>
@@ -107,7 +107,7 @@
                 <button data-bind="click: setRating.bind(this, 5), style:{color: newCommentRating() >= 5 ? '#f4cb42' : null }"> 	&#9733;</button>                &nbsp;&nbsp;
                 <strong data-bind="text: newCommentRating"></strong> &nbsp; stars
               </div>
-			  <!-- when the first star is clicked, knockout binds "1" to newCommentRating, which will eventually be pushed along with the other components that make up a comment.
+              <!-- when the first star is clicked, knockout binds "1" to newCommentRating, which will eventually be pushed along with the other components that make up a comment.
 					this value will later be retrieved and indicate how many stars must be shown, thus showing a star rating.
 					The same holds for the other numbers.
 					
@@ -129,13 +129,16 @@
   <!--display of comments in the timeline-->
   <section class="timeline">
     <ol>
+      <li></li>
+      <li></li>
       <!-- ko foreach: reverse -->
       <li>
         <div>
           <strong data-bind="text: name"></strong>
           <span class="float-right">
               <!-- ko foreach: new Array(parseInt(rating || 0)) -->
-              <span style="color:#f4cb42">&#9733;</span><!--this is where the number stored in commentrating is printed in stars. If no rating is given, 0 stars are printed-->
+              <span style="color:#f4cb42">&#9733;</span>
+          <!--this is where the number stored in commentrating is printed in stars. If no rating is given, 0 stars are printed-->
           <!-- /ko -->
           </span>
           <br>
@@ -147,7 +150,7 @@
       <li></li>
       <li></li>
     </ol>
-
+    <!--arrows to navigate through the comments-->
     <div class="arrows">
       <button class="arrow arrow__prev disabled" disabled>
           <span class="oi oi-arrow-circle-left"></span>
@@ -157,8 +160,8 @@
         </button>
     </div>
   </section>
-  
-<!--bottom bar-->
+
+  <!--bottom bar-->
   <div class="fixed-bottom">
     <div class="collapse bg-dark " id="navbarHeader">
       <div class="container">
@@ -197,7 +200,7 @@
   <script src="js/vendor/holder.min.js"></script>
   <!-- script src="js/general.js"></script-->
   <script src="js/knockout-3.4.2.js"></script>
-  <script src="js/Self-Portraits.js"></script>
+  <script src="Self-Portraits.js"></script>
   <script src="comments.js"></script>
   <script src="general.js"></script>
   <script>

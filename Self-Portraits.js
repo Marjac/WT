@@ -1,6 +1,6 @@
 var SelfPortraitsViewModel = function () {
     var self = this;
-
+    //info contains all the information that needs to be displayed on a page.
     self.info = [{
         img: "img/sp1.jpg",
         title: "Self-Portrait with Grey Felt Hat",
@@ -258,7 +258,7 @@ var SelfPortraitsViewModel = function () {
             }).done();
         clear();//clear the input fields after submitting
     }   
-    //function that cleares the input field
+    //function that clears the input field
     function clear(){
         self.newCommentName("");
         self.newCommentText("");

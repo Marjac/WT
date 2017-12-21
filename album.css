@@ -108,7 +108,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+/**css code that creates the animation while hovering over a portrait on self-portrarits.html**/
 .fade {
    opacity: 1;
    transition: opacity .25s ease-in-out;
@@ -143,7 +143,7 @@ visibility:visible;
   font-size: 250%;
   text-align: center;
 }
-
+/**background image**/
 .body { 
   background: url("img/sp14.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -152,7 +152,7 @@ visibility:visible;
   background-size: cover;
   overflow: visible;
 }
-
+/**rescaling fontsize**/
 h2{
   font-size: 1.5rem;
 }
