@@ -1,3 +1,4 @@
+//Adapted from the timeline found on https://webdesign.tutsplus.com/tutorials/building-a-horizontal-timeline-with-css-and-javascript--cms-28378
 (function () {
 
     // VARIABLES
