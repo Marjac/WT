@@ -58,17 +58,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <img data-bind="attr:{src:selected_info().img}" width="100%" height="auto">
+          <img data-bind="attr:{src:selected_info().img}" width="100%" height="auto"><!--display the image stored in img in self.info -->
         </div>
         <div class="col-xs-12 col-md-6">
           <p style="text-align: center">
-            <h1 class="h2" data-bind="text:selected_info().title"></h1>
+            <h1 class="h2" data-bind="text:selected_info().title"></h1><!--display the data stored in title in self.info -->
             <p>&nbsp;</p>
-            <p data-bind="text:selected_info().when"></p>
-            <p data-bind="text:selected_info().what"></p>
-            <p data-bind="text:selected_info().credits"></p>
+            <p data-bind="text:selected_info().when"></p><!--display the data stored in when in self.info -->
+            <p data-bind="text:selected_info().what"></p><!--display the data stored in what in self.info -->
+            <p data-bind="text:selected_info().credits"></p><!--display the data stored in credits in self.info -->
             <hr>
-            <p data-bind="html:selected_info().description"></p>
+            <p data-bind="html:selected_info().description"></p><!--display the data stored in description in self.info -->
 
           </p>
         </div>
